@@ -12,7 +12,7 @@ function App() {
   }
 
   const removeThing = thing => {
-    setThings(things.filter(thing => thing.id !== thing.id))
+    setThings(things.filter(th => th.id !== thing.id))
   }
 
 
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="mt-12 flex-col flex items-center">
       <InputThings addThing={addThing}/>
-      <Things things={things}/>
+      <Things remove={removeThing} things={things}/>
     </div>
   );
 }

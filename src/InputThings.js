@@ -7,14 +7,14 @@ const InputThings = ({addThing}) => {
     const addNewThing = (e) => {
         e.preventDefault()
         const newThing = {
-          ...name, id: Date.now()
+          name, id: Date.now()
         }
         addThing(newThing)
         setName('')
       }
 
     return (
-        <div>
+        <div className='flex-col flex items-center w-full'>
             <div className="font-bold text-[32px] mb-4">ToDo</div>
             <input 
                 className="border-[3px] h-12 rounded-[20px] w-[40%] px-3"
