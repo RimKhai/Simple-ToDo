@@ -16,7 +16,7 @@ const InputThings = ({addThing}) => {
     return (
         <div className='flex-col flex items-center w-full'>
             <input 
-                className="border-[3px] h-12 rounded-[20px] w-[40%] px-3"
+                className="border-[3px] border-[#8181f8] duration-[2s] h-12 rounded-[20px] w-[40%] px-3 focus:duration-[3s] focus:border-[#4040fc] outline-none"
                 value={name}
                 onChange={event => setName(event.target.value)}  
                 ></input>

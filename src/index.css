@@ -19,6 +19,6 @@ code {
 
 @layer components {
   .thereThing {
-    @apply w-[20%] h-12 border-[2px] rounded-[20px] mt-2 flex justify-center items-center cursor-pointer scale-100 duration-200
+    @apply w-[20%] h-12 border-[2px] border-[#f3f3ff] bg-[#d9d9fe] rounded-[20px] mt-2 flex justify-center items-center cursor-pointer
   }
 }
