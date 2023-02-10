@@ -18,9 +18,12 @@ function App() {
 
 
   return (
-    <div className="mt-12 flex-col flex items-center">
+    <div className="flex-col flex items-center">
+      <div className="flex justify-center border-b-[4px] border-[#8181f8] items-center w-full h-20 bg-white mb-12">
+        <p className="font-bold text-[32px] text-[#8181f8]">ToDo</p>
+      </div>
       <InputThings addThing={addThing}/>
-      <Things remove={removeThing} things={things}/>
+      {things.length !== 0 ? <Things remove={removeThing} things={things}/> : <h1 className="mt-4">Нет Дел</h1>}
     </div>
   );
 }

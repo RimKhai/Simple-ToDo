@@ -15,7 +15,6 @@ const InputThings = ({addThing}) => {
 
     return (
         <div className='flex-col flex items-center w-full'>
-            <div className="font-bold text-[32px] mb-4">ToDo</div>
             <input 
                 className="border-[3px] h-12 rounded-[20px] w-[40%] px-3"
                 value={name}

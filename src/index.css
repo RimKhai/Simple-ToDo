@@ -9,10 +9,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply font-[Roboto] bg-slate-50
+  @apply font-[Roboto] bg-slate-100
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@layer components {
+  .thereThing {
+    @apply w-[20%] h-12 border-[2px] rounded-[20px] mt-2 flex justify-center items-center cursor-pointer scale-100 duration-200
+  }
 }
